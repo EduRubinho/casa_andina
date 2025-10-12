@@ -1,0 +1,242 @@
+/* hotel_casa_andina/css/style.css
+ *
+ * Estilos básicos para la aplicación de Hotel Casa Andina. Se
+ * proporciona una apariencia simple y agradable para los formularios y
+ * mensajes. Puedes personalizar estos estilos según tus necesidades.
+ */
+
+/*
+ * Estilos básicos para el sitio Hotel Casa Andina Tacna.
+ *
+ * Se separan las reglas generales de las específicas para los
+ * formularios de registro e inicio de sesión, de modo que el
+ * encabezado, la navegación y el contenido tengan una estructura
+ * flexible. Utiliza flexbox en la navegación y tarjetas para
+ * presentar información. Puedes modificar estos estilos según sea
+ * necesario.
+ */
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navegación */
+.site-header {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 6px 8px;
+}
+
+.navbar a:hover {
+    background-color: #002244;
+    border-radius: 4px;
+}
+
+/* Contenido general */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero en la página de inicio */
+.hero {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+    color: #003366;
+}
+
+.hero p {
+    margin: 0;
+    color: #555555;
+    font-size: 18px;
+}
+
+.metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.metric {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.metric h3 {
+    margin: 0;
+    font-size: 36px;
+    color: #003366;
+}
+
+.metric p {
+    margin: 5px 0 0;
+    color: #555555;
+}
+
+/* Tarjetas de habitaciones y comida */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555555;
+}
+
+.card .price {
+    font-weight: bold;
+    color: #003366;
+    margin-top: 10px;
+}
+
+/* Formularios de autenticación */
+.auth-wrapper {
+    width: 350px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.auth-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    color: #555555;
+}
+
+.form input,
+.form select {
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+}
